@@ -33,3 +33,5 @@ dist-ssr
 # only a source reference for local lesson authoring
 resources/a2-book/
 voice-samples/
+server/dist
+*.tgz

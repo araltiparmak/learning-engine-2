@@ -19,22 +19,41 @@ content only.
 
 ## Using the engine for a real site
 
-A site repository keeps its content and adds this repository as a git submodule (for
-example in `engine/`). The engine reads everything site-specific from `SITE_ROOT`:
+A site repository keeps its content and depends on a release of this package. A release
+carries the packed engine (`learning-engine-<version>.tgz`) as an asset:
 
-| Path under `SITE_ROOT` | What it holds |
+```json
+{
+  "dependencies": {
+    "learning-engine": "https://github.com/araltiparmak/learning-engine-2/releases/download/v0.2.0/learning-engine-0.2.0.tgz"
+  },
+  "scripts": {
+    "dev": "VITE_LANG=de learning-engine dev",
+    "build": "VITE_LANG=de learning-engine build"
+  }
+}
+```
+
+The `learning-engine` command runs in the site repository; the site root is the working
+directory (or `SITE_ROOT`) and the engine reads everything site-specific from there:
+
+| Path under the site root | What it holds |
 | --- | --- |
 | `content/<target>/` | A content pack: `site.json`, `target.json`, `language.json`, `prompts.json`, `quizzes.json`, `lessons/`, `sources/`, `pages/` |
 | `content/shared/` | Data shared by every pack (`sites.json`, study techniques) |
 | `public/` | Static files, e.g. `audio/<lang>/` |
-| `api/` | Vercel functions; `api/correction.ts` wires `server/correction.ts` to the site's prompts |
+| `api/` | Vercel functions; `api/correction.ts` wires `learning-engine/server/correction` to the site's prompts |
 | `.env`, `.env.local` | `GEMINI_API_KEY` and `VITE_*` variables |
 
 `VITE_LANG` names the content pack to build; `content/<target>/target.json` holds
-`{ "lang", "locale", "title" }`. The build writes to `<SITE_ROOT>/dist`.
+`{ "lang", "locale", "title" }`. The build writes to `<site root>/dist`.
+
+### Releasing
 
 ```sh
-SITE_ROOT=.. VITE_LANG=de pnpm build
+# bump "version" in package.json, commit, then:
+pnpm pack                                   # builds server/dist and writes the .tgz
+gh release create v<version> learning-engine-<version>.tgz --title v<version>
 ```
 
 Type checking always runs against the example pack and `types-stub/`: every pack carries

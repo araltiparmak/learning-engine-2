@@ -11,6 +11,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.0(@types/node@24.13.3)(jiti@2.7.0))
+      '@vitejs/plugin-react':
+        specifier: ^6.0.5
+        version: 6.0.5(vite@8.2.0(@types/node@24.13.3)(jiti@2.7.0))
       react:
         specifier: ^19.2.8
         version: 19.2.8
@@ -23,6 +26,9 @@ importers:
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
+      vite:
+        specifier: ^8.2.0
+        version: 8.2.0(@types/node@24.13.3)(jiti@2.7.0)
     devDependencies:
       '@types/node':
         specifier: ^24.13.3
@@ -33,9 +39,6 @@ importers:
       '@types/react-dom':
         specifier: ^19.2.4
         version: 19.2.4(@types/react@19.2.18)
-      '@vitejs/plugin-react':
-        specifier: ^6.0.5
-        version: 6.0.5(vite@8.2.0(@types/node@24.13.3)(jiti@2.7.0))
       oxlint:
         specifier: ^1.76.0
         version: 1.76.0
@@ -45,9 +48,6 @@ importers:
       typescript:
         specifier: ~7.0.2
         version: 7.0.2
-      vite:
-        specifier: ^8.2.0
-        version: 8.2.0(@types/node@24.13.3)(jiti@2.7.0)
 
 packages:
 

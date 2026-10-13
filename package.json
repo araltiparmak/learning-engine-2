@@ -1,7 +1,6 @@
 {
-  "name": "learning-engine-2",
-  "private": true,
-  "version": "0.0.0",
+  "name": "learning-engine",
+  "version": "0.2.0",
   "type": "module",
   "engines": {
     "node": "24.x"
@@ -10,24 +9,51 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:server": "tsc --ignoreConfig server/correction.ts --outDir server/dist --declaration --target es2023 --module nodenext --skipLibCheck --types node",
+    "prepack": "pnpm build:server"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.5",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router": "^8.3.0",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.0"
   },
   "devDependencies": {
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
-    "@vitejs/plugin-react": "^6.0.5",
     "oxlint": "^1.76.0",
     "playwright": "^1.62.1",
-    "typescript": "~7.0.2",
-    "vite": "^8.2.0"
+    "typescript": "~7.0.2"
   },
-  "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e"
+  "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e",
+  "description": "Engine for language-learning sites: a site repository supplies the content, the engine builds it.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araltiparmak/learning-engine-2.git"
+  },
+  "bin": {
+    "learning-engine": "bin/cli.mjs"
+  },
+  "exports": {
+    "./server/correction": {
+      "types": "./server/dist/correction.d.ts",
+      "default": "./server/dist/correction.js"
+    }
+  },
+  "files": [
+    "bin",
+    "src",
+    "vite",
+    "server/dist",
+    "index.html",
+    "vite.config.ts",
+    "tsconfig.json",
+    "tsconfig.app.json",
+    "tsconfig.node.json"
+  ]
 }
