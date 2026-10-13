@@ -11,7 +11,8 @@
     /* The content pack (content/<target>/) is chosen at build time (see vite.config.ts).
        Type checking binds to the sample pack (en); the pages/ types come from the types-stub/ stubs; every pack carries the same schema. */
     "paths": {
-      "#content/*": ["./content/en/*", "./types-stub/*"]
+      "#content/*": ["./content/en/*", "./types-stub/*"],
+      "#shared/*": ["./content/shared/*"]
     },
     "skipLibCheck": true,
 

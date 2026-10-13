@@ -5,7 +5,7 @@ import config from '../config'
 import { fromLang, localize } from '../i18n'
 // Study techniques do not depend on the taught language, so they live in shared data, not
 // in config; their English text sits next to the Turkish (`titleEn`…, see localize).
-import techniquesData from '../../content/shared/ogrenmeTeknikleri.json'
+import techniquesData from '#shared/ogrenmeTeknikleri.json'
 
 const techniques = localize(techniquesData, fromLang)
 

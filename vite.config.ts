@@ -1,4 +1,5 @@
-import { readFileSync } from 'node:fs'
+import { readdirSync, readFileSync } from 'node:fs'
+import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig, loadEnv, type Plugin } from 'vite'
 
@@ -32,7 +33,7 @@ import { defaultGroups } from './src/components/lessons/defaultGroups.ts'
 // knows nothing about it — without this, /api/* would 404 under `pnpm dev`. The adapter
 // loads the very same handler and bridges Node's req/res to the Web Request/Response
 // the function speaks, so there is no second copy of the logic to keep in sync.
-function vercelApiDev(readEnv: () => Record<string, string>): Plugin {
+function vercelApiDev(siteRoot: string, readEnv: () => Record<string, string>): Plugin {
   return {
     name: 'vercel-api-dev',
     apply: 'serve',
@@ -53,7 +54,7 @@ function vercelApiDev(readEnv: () => Record<string, string>): Plugin {
         void (async () => {
           try {
             const name = url.split('?')[0].slice('/api/'.length)
-            const module = await server.ssrLoadModule(`/api/${name}.ts`)
+            const module = await server.ssrLoadModule(path.join(siteRoot, 'api', `${name}.ts`))
 
             const chunks: Buffer[] = []
             for await (const chunk of req) chunks.push(chunk as Buffer)
@@ -94,41 +95,56 @@ function vercelApiDev(readEnv: () => Record<string, string>): Plugin {
 }
 
 // https://vite.dev/config/
-// Each build target goes to its own Vercel project/domain; VITE_LANG selects which one is
-// built. A target means a content pack (content/<target>/, the '#content' alias); the
-// engine (src/) is the same for every target. Which lesson-specific blocks, quiz engines
-// and pages enter the bundle is decided by the target's own content (vite/contentUsage.ts),
-// so other targets' lessons, data and code it does not use never reach the bundle.
-// When adding a target: one line here + content/<target>/ (site.json, lessons/, sources/,
-// quizzes.json) + scripts/deploy-*.sh.
-type Target = {
-  // The language being taught; reaches the client as import.meta.env.VITE_TARGET_LANG
-  // (and names the audio folder, public/audio/<lang>/). `locale` is its BCP 47 tag.
-  lang: string
-  locale: string
-  // The content pack: content/<content>/ (site copy, lessons, sources, quiz registry,
-  // page data). Bound to the '#content' alias.
-  content: string
-  // Brand name: the <title> of index.html and (via import.meta.env.VITE_BRAND) the in-app
-  // brand text — from a single place.
-  title: string
-}
+// This repository is the engine; a site is the engine plus a site root that holds its
+// content. SITE_ROOT points at that root (default: this repository, which carries a small
+// example site), and the engine reads everything site-specific from there:
+//
+//   <site root>/content/<target>/   content packs (site.json, target.json, lessons/,
+//                                   sources/, quizzes.json, pages/…); bound to '#content'
+//   <site root>/content/shared/     data shared by every pack; bound to '#shared'
+//   <site root>/public/             static files (audio, images)
+//   <site root>/api/                Vercel functions (served by the dev adapter above)
+//   <site root>/.env, .env.local    env files; the build writes to <site root>/dist
+//
+// Each target is its own Vercel project/domain and VITE_LANG names the content pack to
+// build. The pack's target.json tells the engine the rest: the language being taught
+// (`lang`, which reaches the client as import.meta.env.VITE_TARGET_LANG and names the audio
+// folder public/audio/<lang>/), its BCP 47 `locale`, and the brand `title` (the <title> of
+// index.html and, via import.meta.env.VITE_BRAND, the in-app brand text). Which
+// lesson-specific blocks, quiz engines and pages enter the bundle is decided by the pack's
+// own content (vite/contentUsage.ts), so other packs' data and the code only they use never
+// reach the bundle.
+type Target = { lang: string; locale: string; title: string }
 
-const TARGETS: Record<string, Target> = {
-  de: { lang: 'de', locale: 'de-DE', content: 'de', title: 'Deutsch Lernen' },
-  en: { lang: 'en', locale: 'en-US', content: 'en', title: 'İngilizce Öğren' },
-  'en-business': { lang: 'en', locale: 'en-US', content: 'en-business', title: 'İş İngilizcesi' },
+function packNames(contentRoot: string): string[] {
+  return readdirSync(contentRoot, { withFileTypes: true })
+    .filter((e) => e.isDirectory() && e.name !== 'shared')
+    .map((e) => e.name)
+    .sort()
 }
 
 export default defineConfig(({ mode }) => {
+  const engineRoot = fileURLToPath(new URL('.', import.meta.url))
+  const siteRoot = path.resolve(engineRoot, process.env.SITE_ROOT ?? '.')
+  const contentRoot = path.join(siteRoot, 'content')
+
   // Only VITE_LANG is needed here, and it arrives as a build env var from the deploy
   // scripts (-b VITE_LANG=de), so process.env has to stay in play — which is exactly
   // why the secrets take the separate readEnvFiles path instead.
-  const env = loadEnv(mode, process.cwd(), 'VITE_')
-  const target = TARGETS[env.VITE_LANG] ?? TARGETS.de
-  const content = fileURLToPath(new URL(`./content/${target.content}`, import.meta.url))
+  const env = loadEnv(mode, siteRoot, 'VITE_')
+  const packs = packNames(contentRoot)
+  const pack = env.VITE_LANG ?? packs[0]
+  if (!packs.includes(pack)) {
+    throw new Error(`No content pack "${pack}" in ${contentRoot} (found: ${packs.join(', ') || 'none'}).`)
+  }
+  const content = path.join(contentRoot, pack)
+  const target = JSON.parse(readFileSync(path.join(content, 'target.json'), 'utf8')) as Target
   const title = target.title
   return {
+    envDir: siteRoot,
+    publicDir: path.join(siteRoot, 'public'),
+    build: { outDir: path.join(siteRoot, 'dist'), emptyOutDir: true },
+    server: { fs: { allow: [engineRoot, siteRoot] } },
     plugins: [
       react(),
       tailwindcss(),
@@ -136,7 +152,7 @@ export default defineConfig(({ mode }) => {
         name: 'lang-title',
         transformIndexHtml: (html) => html.replace(/<title>.*<\/title>/, `<title>${title}</title>`),
       },
-      vercelApiDev(() => readEnvFiles(process.cwd())),
+      vercelApiDev(siteRoot, () => readEnvFiles(siteRoot)),
       lessonMeta({
         lessons: `${content}/lessons`,
         sources: `${content}/sources`,
@@ -150,14 +166,16 @@ export default defineConfig(({ mode }) => {
       'import.meta.env.VITE_TARGET_LANG': JSON.stringify(target.lang),
       'import.meta.env.VITE_TARGET_LOCALE': JSON.stringify(target.locale),
       'import.meta.env.VITE_BRAND': JSON.stringify(title),
-      // VITE_BLOCK_* / VITE_ENGINE_* / VITE_PAGE_*: what this target's content uses.
-      ...usageFlags(fileURLToPath(new URL('./content', import.meta.url)), target.content),
+      // VITE_BLOCK_* / VITE_ENGINE_* / VITE_PAGE_*: what this pack's content uses.
+      ...usageFlags(contentRoot, pack),
     },
     resolve: {
       alias: {
-        // Directory alias: the target's content pack. The data index files glob
-        // '#content/lessons/*.json' etc.; page data is imported as '#content/pages/<x>.json'.
+        // Directory aliases: the target's content pack and the data shared by all packs.
+        // The data index files glob '#content/lessons/*.json' etc.; page data is imported
+        // as '#content/pages/<x>.json'.
         '#content': content,
+        '#shared': path.join(contentRoot, 'shared'),
       },
     },
   }

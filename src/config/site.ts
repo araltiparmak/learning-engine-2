@@ -1,13 +1,13 @@
 import site from '#content/site.json'
-import { SITES } from './sites'
+import SITES from '#shared/sites.json'
 import type { LangConfig, LessonSection, SiteCopy } from './types'
 
 // The active target's site copy, assembled from its content pack (content/<target>/,
-// bound to '#content' at build time — see the TARGETS table in vite.config.ts):
+// bound to '#content' at build time — see vite.config.ts):
 //   site.json              one entry per explanation language: nav, home, about
 //   lessons/list.json      the Turkish lesson list
 //   lessons/<lang>/list.json  the list for another explanation language
-// A copy's `about.siblings` names other sites by their key in ./sites.ts.
+// A copy's `about.siblings` names other sites by their key in content/shared/sites.json.
 //
 // Deliberately light: the app shell imports this for navigation, so only the lists
 // (lesson cards) come along — never a lesson document.

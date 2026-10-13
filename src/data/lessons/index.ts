@@ -7,7 +7,7 @@ import { fileSlug, loadSources } from '../sources'
 import { quizSources, quizzesForLesson } from '../quizzes'
 
 // Lesson documents for the active language, by slug. The `#content` alias points at
-// the active target's content pack (see the TARGETS table in vite.config.ts), so the globs below
+// the active target's content pack (see vite.config.ts), so the globs below
 // only ever see one language and adding a target needs no new index file. The map is
 // built from file names (kein-nicht.json → 'kein-nicht'); list.json is the order/card
 // list, not a document, so it is excluded.

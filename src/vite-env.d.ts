@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
-// Injected by the `define` block in vite.config.ts from the TARGETS table.
+// Injected by the `define` block in vite.config.ts from the active pack's target.json.
 interface ImportMetaEnv {
   readonly VITE_TARGET_LANG: string
   readonly VITE_TARGET_LOCALE: string
