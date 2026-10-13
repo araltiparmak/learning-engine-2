@@ -1,0 +1,62 @@
+{
+ "kelimeCalismasi": {
+  "title": "Kelimeler",
+  "intro": "Üç çalışma yolu: cümle kartlarıyla kelimeyi bağlamı içinde ezberle, fiil haritasıyla tek bir fiilin bütün çekimlerini tek ekranda gör, en önemli 500 kelimeyle konuşma dilinin temelini kur."
+ },
+ "temelKelimeler": {
+  "intro": "Konuşma dilinde en sık geçen 500 kelime, sıklık sırasıyla. Listeler birbirini tekrar etmez: ilk 100'ü bitirince 101–250'ye geç. Zamirler ve bağlaçlar listede yok; kişi zamirlerinin hâlleri ayrı tabloda. Öğrendiğin kelimeyi ✓ ile işaretle, listenin sonuna iner.",
+  "pronounNote": "Her satır bir kişinin dört hâlidir: özne (Nominativ), -i hâli (Akkusativ), -e hâli (Dativ), Genitiv. Genitiv zamirleri (meiner, deiner…) günlük dilde neredeyse hiç kullanılmaz; 'benim' demek için son sütundaki iyelik sözcüğü kullanılır: mein Buch, dein Auto.",
+  "pronounColumns": [
+   {
+    "key": "nom",
+    "label": "Nominativ",
+    "lang": "de"
+   }
+  ]
+ },
+ "kelimeler": {
+  "title": "Cümleler",
+  "intro": "Kelimeyi tek başına ezberlemek işe yaramaz — kullanıldığı cümleyle birlikte akılda kalır. Her kartta bir cümle var; içindeki hedef kelime vurgulu. Önce cümleyi anlamaya çalış, sonra karta tıklayıp çevirisini gör.",
+  "themes": {
+   "arbeit": "İş",
+   "reise": "Seyahat",
+   "sport": "Spor"
+  },
+  "flipToSentence": "Kartı çevir: Almanca cümle"
+ },
+ "fiiller": {
+  "title": "Fiil Haritası",
+  "intro": "Bir fiil seç: Präsens çekimi, Perfekt hâli, emir kipi, hangi hâli/edatı istediği ve ilişkili fiiller tek ekranda. A1 ve A2 fiilleri ayrı ayrı süzülebilir.",
+  "present": {
+   "title": "Präsens",
+   "persons": [
+    [
+     "ich"
+    ]
+   ]
+  },
+  "perfect": {
+   "title": "Perfekt",
+   "badge": "Perfekt: {aux}",
+   "subject": "er/sie/es",
+   "speak": "Er {aux} {partizip}.",
+   "markedAux": "sein"
+  },
+  "imperative": {
+   "title": "Imperativ (emir kipi)",
+   "persons": [
+    "du"
+   ]
+  },
+  "government": "Rektion (hangi hâl / edat ile?)",
+  "footer": "Partizip II nasıl kurulur? [Partizip II dersi](/dersler/partizip-2) · haben/sein ayrımı için [haben mi, sein mi? dersi](/dersler/haben-sein)"
+ },
+ "oyunlar": {
+  "title": "Oyunlar",
+  "intro": "Oynayarak pekiştir: kelime gruplarını oyunlarla ezberle, Sprachberg'de cümle kurarak zirveye tırman, Kommissar Felix'in vakalarını Almanca çöz."
+ },
+ "sprachberg": {
+  "title": "Sprachberg 🏔️",
+  "intro": "Dil Dağı’na tırmanıyorsun! Her istasyonda yeni bir kalıp öğren, cümleler kurarak zirveye çık."
+ }
+}

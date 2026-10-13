@@ -1,0 +1,45 @@
+{
+ "meta": {
+  "metersPerLevel": 800,
+  "ranks": [
+   "Anfänger (Acemi)"
+  ]
+ },
+ "levels": [
+  {
+   "id": "a2-stufe-1",
+   "title": "Perfekt",
+   "level": "A2",
+   "emoji": "🏰",
+   "station": "Geçmiş Zaman Kalesi",
+   "concept": "Geçmiş zaman: haben/sein 2. pozisyonda, Partizip II cümlenin SONUNDA. İkisi 'cümle parantezi' (Satzklammer) oluşturur.",
+   "de": "Perfekt: haben/sein auf Position 2, Partizip II am Ende — die Satzklammer.",
+   "newWords": [
+    {
+     "de": "gestern",
+     "tr": "dün"
+    }
+   ],
+   "exercises": [
+    {
+     "sentence": "Ich habe Pizza gegessen.",
+     "tr": "Pizza yedim.",
+     "parts": [
+      {
+       "w": "Ich",
+       "r": "özne"
+      }
+     ],
+     "distractors": [
+      {
+       "w": "bin",
+       "r": "yardımcı"
+      }
+     ],
+     "tipWrong": "essen nesne alan sıradan bir fiildir → haben.",
+     "tipOrder": "haben 2. pozisyonda, Partizip II (gegessen) sonda."
+    }
+   ]
+  }
+ ]
+}

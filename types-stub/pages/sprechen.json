@@ -1,0 +1,25 @@
+{
+ "intro": "Gramer bildiğin hâlde konuşurken donuyorsan sorun kelime değil, hazır kalıp eksikliğidir. Almanlar fikrini söylerken hep aynı birkaç kalıbı kullanır — onları ağzına yerleştirdiğinde cümleyi baştan kurmak zorunda kalmazsın. Buradaki dersler aynı işi FARKLI yöntemlerle yapıyor: kalıp bankası, diyalog, refleks antrenmanı, sahne kurgusu. Hangisi sana daha iyi oturuyorsa onunla devam et.",
+ "lektionen": [
+  {
+   "id": "fikrini-soyle",
+   "emoji": "💬",
+   "method": "Yöntem A — Kalıp bankası",
+   "methodNote": "Kalıpları işlevine göre raflara dizer: fikir açma, katılma, tereddüt. Sözlük gibi taranır, konuşurken gözle hızlıca doğru rafı bulursun.",
+   "title": "Ich finde… — fikrini söylemenin üç yolu",
+   "titleTr": "finde · glaube · denke arasındaki fark ve hazır kalıp bankası",
+   "ziel": "Türkçedeki tek \"bence\"yi Almanca'da doğru üçe ayırmak ve her duruma hazır bir kalıp bulmak.",
+   "doc": {
+    "title": "Ich finde… — fikrini söylemenin üç yolu",
+    "level": "A2",
+    "blocks": [
+     {
+      "type": "paragraph",
+      "text": "Türkçede tek bir kelime her işi görür: **bence**. \"Bence güzel\", \"bence yağmur yağacak\", \"bence haklısın\" — üçünde de aynı kelime. Almanca bu üç işi üç ayrı fiile böler ve yanlış olanı seçtiğinde cümle gramer olarak doğru ama **kulağa tuhaf** gelir.",
+      "de": "Deutsch teilt das türkische \"bence\" auf drei Verben auf: finden, glauben und denken."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Nasıl çalışmalı?",
+  "titleEn": "How to study",
+  "intro": "Bu site aşağıdaki ilkelere göre kurgulandı. Şimdilik kısa tutuldu; parantezdeki adlar aramak istersen diye.",
+  "introEn": "This site is built on the principles below. They are kept short for now; the names underneath are there in case you want to look them up.",
+  "items": [
+    {
+      "emoji": "🧠",
+      "title": "Önce hatırlamaya çalış",
+      "titleEn": "Try to recall first",
+      "body": "Cevaba bakmadan önce hatırlamayı dene. Zorlandığın o an bilgiyi kalıcı yapan şeydir; okumak değil, geri çağırmak öğretir.",
+      "bodyEn": "Try to remember before you look at the answer. That moment of effort is what makes knowledge stick: pulling it back out teaches, rereading doesn't.",
+      "ref": "Retrieval practice — Roediger & Karpicke"
+    },
+    {
+      "emoji": "🔁",
+      "title": "Aralıklarla tekrarla",
+      "titleEn": "Space out your reviews",
+      "body": "Bir konuyu tek oturuşta uzun uzun çalışmak yerine ertesi gün, üç gün sonra ve bir hafta sonra kısa kısa geri dön.",
+      "bodyEn": "Instead of one long session on a topic, come back to it briefly the next day, three days later and a week later.",
+      "ref": "Spaced repetition — Ebbinghaus'un unutma eğrisi",
+      "refEn": "Spaced repetition — Ebbinghaus's forgetting curve"
+    },
+    {
+      "emoji": "🗣️",
+      "title": "Kendi cümlenle anlat",
+      "titleEn": "Explain it in your own words",
+      "body": "Kuralı, hiç bilmeyen birine anlatır gibi kendi kelimelerinle açıkla. Anlatamadığın yer, henüz öğrenmediğin yerdir.",
+      "bodyEn": "Explain the rule in your own words, as if to someone who has never heard of it. The part you can't explain is the part you haven't learned yet.",
+      "ref": "Feynman tekniği",
+      "refEn": "The Feynman technique"
+    },
+    {
+      "emoji": "🔀",
+      "title": "Konuları karıştır",
+      "titleEn": "Mix your topics",
+      "body": "Aynı kalıbı arka arkaya tekrarlamak kolay gelir ama az öğretir. Birkaç konuyu aynı oturumda karıştırarak çalış.",
+      "bodyEn": "Repeating the same pattern over and over feels easy but teaches little. Mix a few topics in one session.",
+      "ref": "Interleaving"
+    },
+    {
+      "emoji": "💪",
+      "title": "Zorlanmak iyi işarettir",
+      "titleEn": "Struggling is a good sign",
+      "body": "Akıcı geçen tekrar çoğu zaman aldatır. Yavaş ve çabalı gelen çalışma daha iyi tutar; hata yapmak sürecin parçasıdır.",
+      "bodyEn": "Practice that feels smooth is often misleading. Slow, effortful study sticks better, and mistakes are part of the process.",
+      "ref": "Desirable difficulties — Robert Bjork"
+    },
+    {
+      "emoji": "❓",
+      "title": "\"Neden böyle?\" diye sor",
+      "titleEn": "Ask \"why is it like this?\"",
+      "body": "Kuralı ezberlemeden önce sebebini sor. Bir bilgiyi bildiklerine bağladığında hatırlaman kolaylaşır.",
+      "bodyEn": "Before memorising a rule, ask for its reason. Linking new information to what you already know makes it easier to recall.",
+      "ref": "Elaborative interrogation"
+    }
+  ]
+}

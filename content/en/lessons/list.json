@@ -1,0 +1,14 @@
+[
+  {
+    "title": "A1 — Temeller",
+    "note": "Sıfırdan başlıyorsan buradan: be fiili, günlük rutin ve \"var / yok\". Üç ders, sıkıcı olmama sözü ve her dersin altında çoktan seçmeli quiz + cümle kurma oyunu.",
+    "lessons": [
+      {
+        "slug": "to-be",
+        "title": "am / is / are — İngilizcenin çekirdek fiili",
+        "level": "A1",
+        "description": "Türkçede ek, İngilizcede fiil: \"öğrenciyim\" → I am a student. Olumsuz, soru ve kısa cevap kalıplarıyla."
+      }
+    ]
+  }
+]

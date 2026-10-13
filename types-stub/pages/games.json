@@ -1,0 +1,32 @@
+{
+ "sets": [
+  {
+   "id": "gunler",
+   "title": "Günler",
+   "de": "die Wochentage",
+   "level": "A1",
+   "emoji": "📅",
+   "intro": "Haftanın yedi günü. Hepsi eril: der Montag, der Dienstag… Almanya'da hafta pazartesi başlar, gün adının önüne de am gelir: am Montag (pazartesi günü).",
+   "items": [
+    {
+     "id": "mo",
+     "de": "Montag",
+     "tr": "pazartesi",
+     "en": "Monday",
+     "short": "Mo",
+     "group": "woche"
+    }
+   ],
+   "games": [
+    {
+     "type": "match",
+     "id": "eslestir",
+     "title": "Eşleştir",
+     "intro": "Almanca günü Türkçesinin üstüne taşı.",
+     "left": "de",
+     "right": "meaning"
+    }
+   ]
+  }
+ ]
+}

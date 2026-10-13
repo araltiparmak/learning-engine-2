@@ -1,0 +1,33 @@
+[
+ {
+  "verb": "machen",
+  "pose": "work",
+  "tr": "yapmak",
+  "en": "to do, to make",
+  "level": "A1",
+  "type": "düzenli",
+  "aux": "haben",
+  "partizip": "gemacht",
+  "praesens": {
+   "ich": "mache",
+   "du": "machst",
+   "er": "macht",
+   "wir": "machen",
+   "ihr": "macht",
+   "sie": "machen"
+  },
+  "imperativ": {
+   "du": "Mach!",
+   "ihr": "Macht!",
+   "Sie": "Machen Sie!"
+  },
+  "rektion": "+ Akkusativ — etwas machen (Ich mache die Hausaufgaben.)",
+  "example": {
+   "de": "Was machst du am Wochenende?",
+   "tr": "Hafta sonu ne yapıyorsun?"
+  },
+  "related": [
+   "tun"
+  ]
+ }
+]

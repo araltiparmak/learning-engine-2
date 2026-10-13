@@ -1,0 +1,21 @@
+{
+ "intro": "Dersler burada önerilen sırayla duruyor; kilit yok, istediğin dersten başlayabilirsin. A2 kartlarındaki not, dersin hangi kısmının A2 sınavında beklendiğini söylüyor. Aralardaki kısa okuma ve dinleme parçaları o adımın ve önceki adımların gramerini kullanıyor. Sıranın dışındaki dersler (pratik kalıplar, kurs kitabı, yazma) en altta.",
+ "paths": [
+  {
+   "id": "a1",
+   "level": "A1",
+   "title": "A1",
+   "sections": [
+    {
+     "title": "İsim ve fiil",
+     "steps": [
+      {
+       "slug": "der-die-das",
+       "why": "İlk iş: her isim bir cinsle gelir; tahmin etmenin yolu kelimenin sonu."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+  "sentenceBuilder": {
+    "roles": {
+      "özne": "özne",
+      "fiil": "fiil",
+      "yardımcı": "yardımcı fiil",
+      "partizip": "V3 (partisip)",
+      "orta": "nasıl / araç",
+      "zaman": "zaman",
+      "bağlaç": "bağlaç",
+      "soru": "soru kelimesi",
+      "mastar": "mastar (to + fiil)",
+      "nesne": "nesne / tümleç",
+      "yer": "yer"
+    },
+    "rolesEn": {
+      "özne": "subject",
+      "fiil": "verb",
+      "yardımcı": "auxiliary",
+      "partizip": "past participle",
+      "orta": "manner",
+      "zaman": "time",
+      "bağlaç": "conjunction",
+      "soru": "question word",
+      "mastar": "infinitive (to + verb)",
+      "nesne": "object",
+      "yer": "place"
+    },
+    "orderTip": "Sırayı kontrol et — İngilizcede özne fiilden önce gelir ve kuyruk hep aynı dizilir: nasıl → nerede → ne zaman.",
+    "orderTipEn": "Check the order — the subject comes before the verb, and the tail is always manner → place → time."
+  },
+  "writingCheck": {
+    "placeholder": "I have went to the cinema yesterday.",
+    "translatePlaceholder": "Dün akşam sinemaya gittim.",
+    "focusHint": "Hangi konuyu çalışıyorsun? (opsiyonel — ör. Present Perfect)",
+    "translateTab": "Türkçeden İngilizceye",
+    "translateLead": "Türkçe cümleni yaz — Felix İngilizcesini versin ve hangi gramer konularını kullandığını anlatsın.",
+    "pageLead": "İngilizce bir cümle yaz, Felix düzeltsin ve hatanı Türkçe anlatsın. İkinci sekmede tersi: Türkçe cümleni çevirsin ve kullandığı gramer konularını anlatsın. Quiz gibi şıkları yok — cümleyi sen kuruyorsun."
+  },
+  "wordLookup": {
+    "placeholder": "get up, reliable, ısrar etmek…",
+    "lead": "Öğrenmek istediğin kelimeyi yaz — Felix anlamını, çekimlerini, örnek cümlesini ve varsa zıddını hazırlasın. Türkçe de yazabilirsin."
+  }
+}

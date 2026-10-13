@@ -1,0 +1,33 @@
+{
+  "tr": {
+    "nav": [
+      {
+        "to": "/dersler",
+        "label": "Dersler"
+      },
+      {
+        "to": "/quiz",
+        "label": "Quiz"
+      }
+    ],
+    "home": {
+      "title": "Let's go!",
+      "intro": "Merhaba, ben Felix! İngilizce öğrenme yolculuğunda sana eşlik edeceğim. A1 temelleriyle (be fiili, günlük rutin, \"var / yok\") başla, sonra tek bir cümleyi büyüterek zamanları toparla. Her dersin altında çoktan seçmeli quiz ve cümle kurma oyunu var — ve dersler sıkıcı olmamaya çalışıyor.",
+      "ctas": [
+        {
+          "to": "/dersler",
+          "label": "Derslere başla →",
+          "primary": true
+        },
+        {
+          "to": "/dersler/to-be",
+          "label": "A1: am / is / are"
+        }
+      ]
+    },
+    "about": {
+      "intro": "Bu site, Türkçe konuşanlar için hazırlanmış ücretsiz bir İngilizce öğrenme kaynağı. Sıfırdan başlayıp be fiili, günlük rutin ve \"var / yok\" kalıplarıyla temeli kurmayı, sonra tek bir cümleyi büyüterek zamanları toparlamayı hedefliyor. Toplantı, e-posta ve mülakat dili için kardeş site İş İngilizcesi'ne geç.",
+      "siblings": []
+    }
+  }
+}

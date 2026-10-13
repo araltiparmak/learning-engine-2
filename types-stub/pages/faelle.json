@@ -1,0 +1,56 @@
+{
+ "intro": "Kommissar Felix'in masasında çözülmeyi bekleyen vakalar var. İlk dosyalar tek bir gramer konusunu işler; sonrakiler gerçek bir soruşturma gibi 2–3 konuyu birlikte kullanır. Dosyayı aç, delil notunu (Indizien) oku, örnekleri incele — sonra ifadeleri karşılaştırıp yalancıyı bul ve davayı kapat. (A2)",
+ "faelle": [
+  {
+   "id": "kim-yapti",
+   "nr": 1,
+   "title": "Kim Yaptı? — Nominativ",
+   "motif": "lupe",
+   "grammar": "Nominativ (özne): wer? · der/die/das",
+   "tatort": "Her vaka bir soruyla başlar: Fiili kim işledi? Cümlenin failini bulan, Nominativ'i tanır.",
+   "erklaerung": {
+    "tr": [
+     "Her dava aynı soruyla açılır: bunu kim yaptı? Nominativ işte o 'fail'i işaret eder — cümlede eylemi yapan özneyi. 'wer?' (kim?) diye sor, cevap seni doğrudan şüpheliye götürür; üstelik fiil de hep ona göre çekimlenir, yani onu bulunca cümlenin iskeleti de eline geçer."
+    ],
+    "de": "Der Nominativ ist der Fall des Subjekts — wer oder was die Handlung macht. Das Verb richtet sich immer nach dem Subjekt."
+   },
+   "indizien": [
+    "Nominativ = failin/öznenin hâli — soru: wer? (kim?)"
+   ],
+   "sentences": [
+    {
+     "de": "Der Dieb öffnet das Fenster.",
+     "tr": "Hırsız pencereyi açıyor. (der Dieb = fail)"
+    }
+   ],
+   "merke": "Şüphen varsa fiili bul, sonra 'wer?' diye sor — cevap Nominativ'dir.",
+   "dersLink": {
+    "to": "/dersler/kasus",
+    "label": "Kasus (hâller) dersi"
+   },
+   "whodunit": {
+    "intro": "Gece bir şey çalındı — peki kim yaptı? Almanca'da eylemi yapan (kim/ne?) cümlenin öznesidir ve NOMINATIV hâlindedir: der/die/das, ein/eine, çoğulda die. Her tanığın ifadesinde önce ÖZNEYİ bul: wer? — eylemi kim ya da kaç kişi yaptı? İfadesinin öznesi kesin bilgilerle (Fakten) çelişen kişi yalan söylüyor; fail odur.",
+    "facts": [
+     "Der Dieb war allein. Nur eine Person war im Zimmer. (Hırsız yalnızdı; odada tek kişi vardı.)"
+    ],
+    "prompt": "Her ifadenin öznesini (wer? → Nominativ) belirle: eylemi kim / kaç kişi yaptı? Öznesi Fakten ile çelişeni suçla.",
+    "suspects": [
+     {
+      "name": "Anna",
+      "role": "Nachbarin",
+      "de": "Ein Mann ging allein durch die Hintertür ins Haus.",
+      "tr": "Bir adam tek başına arka kapıdan eve girdi.",
+      "reason": "Öznesi 'ein Mann' — tek kişi. Fakten ile uyumlu (yalnız, arka kapı). Çelişki yok."
+     }
+    ],
+    "solved": "🎉 Doğru! Bruno yalan söyledi. İfadesinin öznesi (Nominativ) 'zwei Männer' — iki kişi. Ama fail yalnızdı, odada tek kişi vardı. Cümlede eylemi yapanı gösteren Nominativ, gerçekle çelişti. Fail: Bruno.",
+    "glossar": [
+     {
+      "de": "der Dieb",
+      "tr": "hırsız"
+     }
+    ]
+   }
+  }
+ ]
+}

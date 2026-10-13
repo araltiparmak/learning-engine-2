@@ -1,0 +1,168 @@
+{
+  "forms": [
+    { "term": "I am (I'm)", "tr": "ben ...-im", "example": { "en": "I am a student.", "tr": "Ben öğrenciyim." }, "note": "am yalnızca I ile kullanılır — başka hiçbir özneyle gelmez." },
+    { "term": "you are (you're)", "tr": "sen / siz ...-sin", "example": { "en": "You are my friend.", "tr": "Sen benim arkadaşımsın." }, "note": "you tek kişi için de çoğul için de aynıdır ve hep are alır." },
+    { "term": "he is (he's)", "tr": "o ...-dir (erkek)", "example": { "en": "He is at work.", "tr": "O işte." } },
+    { "term": "she is (she's)", "tr": "o ...-dir (kadın)", "example": { "en": "She is a teacher.", "tr": "O öğretmen." } },
+    { "term": "it is (it's)", "tr": "o ...-dir (nesne, hayvan, hava)", "example": { "en": "It is cold today.", "tr": "Bugün hava soğuk." }, "note": "Türkçede öznesiz kurulan \"Hava soğuk\" cümlesi İngilizcede özne ister: it." },
+    { "term": "we are (we're)", "tr": "biz ...-iz", "example": { "en": "We are ready.", "tr": "Biz hazırız." } },
+    { "term": "they are (they're)", "tr": "onlar ...-dir", "example": { "en": "They are at home.", "tr": "Onlar evde." } }
+  ],
+  "negatives": [
+    { "en": "I'm not hungry.", "tr": "Aç değilim.", "note": "am not'ın kısaltması yoktur: I'm not doğru, I amn't diye bir şey yok." },
+    { "en": "He isn't here today.", "tr": "O bugün burada değil.", "note": "isn't = is not" },
+    { "en": "We aren't late.", "tr": "Geç değiliz.", "note": "aren't = are not" },
+    { "en": "It isn't easy.", "tr": "Bu kolay değil." },
+    { "en": "They aren't my books.", "tr": "Onlar benim kitaplarım değil." }
+  ],
+  "questions": [
+    { "en": "Are you ready? — Yes, I am.", "tr": "Hazır mısın? — Evet, hazırım.", "note": "Kısa cevapta kısaltma kullanılmaz: Yes, I am (Yes, I'm değil)." },
+    { "en": "Is she at home? — No, she isn't.", "tr": "O evde mi? — Hayır, değil." },
+    { "en": "Am I late? — No, you aren't.", "tr": "Geç mi kaldım? — Hayır, kalmadın." },
+    { "en": "Where are you from? — I'm from Turkey.", "tr": "Nerelisin? — Türkiyeliyim.", "note": "Nereli olduğun be + from ile sorulur." },
+    { "en": "How old is your brother? — He is nine.", "tr": "Kardeşin kaç yaşında? — Dokuz yaşında.", "note": "Yaş be fiiliyle söylenir: He is nine (He has nine değil)." }
+  ],
+  "examples": [
+    { "en": "I am Ali.", "tr": "Ben Ali'yim." },
+    { "en": "She is my sister.", "tr": "O benim kız kardeşim." },
+    { "en": "We are in the office.", "tr": "Biz ofisteyiz." },
+    { "en": "The coffee is hot.", "tr": "Kahve sıcak." },
+    { "en": "My parents are at work.", "tr": "Annemle babam işte." },
+    { "en": "You are right.", "tr": "Haklısın." },
+    { "en": "It is Monday today.", "tr": "Bugün pazartesi." },
+    { "en": "The children are tired.", "tr": "Çocuklar yorgun." },
+    { "en": "I am not a doctor.", "tr": "Ben doktor değilim." },
+    { "en": "Is this your bag?", "tr": "Bu senin çantan mı?" },
+    { "en": "They are very friendly.", "tr": "Onlar çok cana yakın." },
+    { "en": "How are you? — I'm fine, thanks.", "tr": "Nasılsın? — İyiyim, teşekkürler." }
+  ],
+  "quiz": [
+    { "sentence": "I ___ a student.", "correct": "am", "wrong": ["is", "are", "be"], "tr": "Ben öğrenciyim.", "reason": "I öznesi her zaman am alır." },
+    { "sentence": "She ___ my sister.", "correct": "is", "wrong": ["am", "are", "be"], "tr": "O benim kız kardeşim.", "reason": "he / she / it → is." },
+    { "sentence": "We ___ in the office.", "correct": "are", "wrong": ["am", "is", "be"], "tr": "Biz ofisteyiz.", "reason": "we / you / they → are." },
+    { "sentence": "___ you ready?", "correct": "Are", "wrong": ["Is", "Am", "Do"], "tr": "Hazır mısın?", "reason": "Soruda be fiili özneden önce gelir; you → are." },
+    { "sentence": "He ___ not at home.", "correct": "is", "wrong": ["am", "are", "does"], "tr": "O evde değil.", "reason": "Olumsuzda not, be fiilinden SONRA gelir: is not (isn't)." },
+    { "sentence": "My parents ___ at work.", "correct": "are", "wrong": ["is", "am", "be"], "tr": "Annemle babam işte.", "reason": "Çoğul özne (parents) → are." },
+    { "sentence": "It ___ cold today.", "correct": "is", "wrong": ["are", "am", "be"], "tr": "Bugün hava soğuk.", "reason": "Hava için özne it, fiil is." },
+    { "sentence": "I ___ 30 years old.", "correct": "am", "wrong": ["have", "is", "are"], "tr": "30 yaşındayım.", "reason": "Yaş be ile söylenir: I am 30 (I have 30 değil)." },
+    { "sentence": "Are you tired? — Yes, I ___.", "correct": "am", "wrong": ["'m", "is", "do"], "tr": "Yorgun musun? — Evet, yorgunum.", "reason": "Kısa cevapta kısaltma kullanılmaz: Yes, I am." },
+    { "sentence": "The coffee ___ hot.", "correct": "is", "wrong": ["are", "am", "be"], "tr": "Kahve sıcak.", "reason": "Tekil özne (the coffee) → is." },
+    { "sentence": "___ this your bag?", "correct": "Is", "wrong": ["Are", "Am", "Does"], "tr": "Bu senin çantan mı?", "reason": "this tekildir → is." },
+    { "sentence": "They ___ not my books.", "correct": "are", "wrong": ["is", "am", "do"], "tr": "Onlar benim kitaplarım değil.", "reason": "they → are; olumsuzluk not ile kurulur." },
+    { "sentence": "How old ___ your brother?", "correct": "is", "wrong": ["are", "am", "does"], "tr": "Kardeşin kaç yaşında?", "reason": "Tekil özne (your brother) → is; yaş sorusu be ile kurulur." },
+    { "sentence": "Where ___ you from?", "correct": "are", "wrong": ["is", "am", "do"], "tr": "Nerelisin?", "reason": "you → are; nereli olduğun be + from ile sorulur." },
+    { "sentence": "The children ___ tired.", "correct": "are", "wrong": ["is", "am", "be"], "tr": "Çocuklar yorgun.", "reason": "children çoğuldur (child'ın çoğulu) → are." }
+  ],
+  "satzbau": [
+    {
+      "sentence": "I am a student.",
+      "tr": "Ben öğrenciyim.",
+      "parts": [
+        { "w": "I", "r": "özne" },
+        { "w": "am", "r": "fiil" },
+        { "w": "a student", "r": "nesne" }
+      ],
+      "distractors": [{ "w": "is", "r": "fiil" }],
+      "tipWrong": "I öznesi am alır; meslek söylerken tekil ismin önünde a bulunur."
+    },
+    {
+      "sentence": "She isn't at home.",
+      "tr": "O evde değil.",
+      "parts": [
+        { "w": "She", "r": "özne" },
+        { "w": "isn't", "r": "fiil" },
+        { "w": "at home", "r": "yer" }
+      ],
+      "distractors": [{ "w": "aren't", "r": "fiil" }],
+      "tipWrong": "she tekil üçüncü kişidir → isn't."
+    },
+    {
+      "sentence": "We are in the office.",
+      "tr": "Biz ofisteyiz.",
+      "parts": [
+        { "w": "We", "r": "özne" },
+        { "w": "are", "r": "fiil" },
+        { "w": "in the office", "r": "yer" }
+      ],
+      "distractors": [{ "w": "am", "r": "fiil" }]
+    },
+    {
+      "sentence": "Are you ready?",
+      "tr": "Hazır mısın?",
+      "parts": [
+        { "w": "Are", "r": "fiil" },
+        { "w": "you", "r": "özne" },
+        { "w": "ready", "r": "nesne" }
+      ],
+      "distractors": [{ "w": "Is", "r": "fiil" }],
+      "tipOrder": "Soruda be fiili başa geçer, özne onun arkasına düşer."
+    },
+    {
+      "sentence": "My parents are at work.",
+      "tr": "Annemle babam işte.",
+      "parts": [
+        { "w": "My parents", "r": "özne" },
+        { "w": "are", "r": "fiil" },
+        { "w": "at work", "r": "yer" }
+      ],
+      "distractors": [{ "w": "is", "r": "fiil" }]
+    },
+    {
+      "sentence": "It is cold today.",
+      "tr": "Bugün hava soğuk.",
+      "parts": [
+        { "w": "It", "r": "özne" },
+        { "w": "is", "r": "fiil" },
+        { "w": "cold", "r": "nesne" },
+        { "w": "today", "r": "zaman" }
+      ],
+      "distractors": [{ "w": "are", "r": "fiil" }],
+      "altSentences": ["Today it is cold."],
+      "tipOrder": "Zaman ifadesi sonda durur; vurgu için başa da alınabilir ama özne ile fiilin arasına giremez."
+    },
+    {
+      "sentence": "Is this your bag?",
+      "tr": "Bu senin çantan mı?",
+      "parts": [
+        { "w": "Is", "r": "fiil" },
+        { "w": "this", "r": "özne" },
+        { "w": "your bag", "r": "nesne" }
+      ],
+      "distractors": [{ "w": "Are", "r": "fiil" }]
+    },
+    {
+      "sentence": "I am not a doctor.",
+      "tr": "Ben doktor değilim.",
+      "parts": [
+        { "w": "I", "r": "özne" },
+        { "w": "am not", "r": "fiil" },
+        { "w": "a doctor", "r": "nesne" }
+      ],
+      "distractors": [{ "w": "isn't", "r": "fiil" }],
+      "tipWrong": "am not kısaltılmaz; I'm not yazılır ama iki kelime olarak I + am not dizilir."
+    },
+    {
+      "sentence": "Where are you from?",
+      "tr": "Nerelisin?",
+      "parts": [
+        { "w": "Where", "r": "soru" },
+        { "w": "are", "r": "fiil" },
+        { "w": "you", "r": "özne" },
+        { "w": "from", "r": "yer" }
+      ],
+      "distractors": [{ "w": "is", "r": "fiil" }],
+      "tipOrder": "Soru kelimesi başta, sonra be fiili, sonra özne: Where + are + you + from."
+    },
+    {
+      "sentence": "My brother is nine years old.",
+      "tr": "Kardeşim dokuz yaşında.",
+      "parts": [
+        { "w": "My brother", "r": "özne" },
+        { "w": "is", "r": "fiil" },
+        { "w": "nine years old", "r": "nesne" }
+      ],
+      "distractors": [{ "w": "has", "r": "fiil" }],
+      "tipWrong": "Yaş be ile söylenir: He is nine (He has nine değil)."
+    }
+  ]
+}

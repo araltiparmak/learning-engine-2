@@ -1,0 +1,29 @@
+{
+ "intro": "Her gün dört kısa parça: önce tek bir kalıbın özünü görüp 8 soruluk bir quiz çözersin, sonra aynı konuda bir metin okur, bir diyalog dinler ve 3–4 cümlelik bir mesaj yazarsın. Bir gün yaklaşık 15 dakika sürer; kalıbın tamamı dersler sekmesinde. Bitirdiğin günü işaretle; sıradaki gün listede öne çıkar.",
+ "days": [
+  {
+   "id": "a2-team-1",
+   "level": "A2",
+   "theme": "Im Team",
+   "emoji": "💻",
+   "title": "Was hast du gestern gemacht?",
+   "focus": "Yazılım ekibinde günün ilk on beş dakikası Daily'dir. Bugün üç cümleyi kurmayı çalışıyorsun: dün ne yaptın (*Gestern habe ich den Bug gefixt*), bugün ne yapıyorsun (*Heute arbeite ich an …*) ve engelin var mı (*Ich warte auf …*). Okurken ve dinlerken yakala: Selin ilk daily'sinde *Keine Blocker* diyor, Murat ise test sunucusunun erişim bilgilerini bekliyor.",
+   "lesson": "daily-standup",
+   "reading": "neu-im-team",
+   "listening": "daily-im-team",
+   "writing": {
+    "task": "Bugün Daily'ye katılamıyorsun. Ekibin Slack kanalına kısa bir güncelleme yaz (3–4 cümle).",
+    "use": [
+     "Dün ne yaptın: *Gestern habe ich … gefixt / getestet / geschrieben*"
+    ],
+    "topic": "Daily-Update: gestern Perfekt, heute Präsens, Blocker",
+    "model": [
+     {
+      "de": "Hallo zusammen,",
+      "tr": "Herkese merhaba,"
+     }
+    ]
+   }
+  }
+ ]
+}

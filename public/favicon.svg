@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 6 108 108">
+  <title>Felix</title>
+  <!-- The head of the mascot Felix (src/components/Mascot.tsx, "happy" pose) — the body and
+       fine details are left out so it stays readable at small sizes. -->
+  <!-- ears -->
+  <path d="M30 44 L20 8 L54 27 Z" fill="#ea580c" />
+  <path d="M90 44 L100 8 L66 27 Z" fill="#ea580c" />
+  <path d="M32 37 L26 16 L46 27 Z" fill="#7c2d12" />
+  <path d="M88 37 L94 16 L74 27 Z" fill="#7c2d12" />
+  <!-- head -->
+  <path
+    d="M60 112 C36 108 14 90 15 62 C16 38 36 24 60 24 C84 24 104 38 105 62 C106 90 84 108 60 112 Z"
+    fill="#f97316"
+  />
+  <!-- white muzzle patches -->
+  <ellipse cx="44" cy="86" rx="19" ry="15" fill="#fff7ed" />
+  <ellipse cx="76" cy="86" rx="19" ry="15" fill="#fff7ed" />
+  <!-- cheeks -->
+  <circle cx="25" cy="74" r="5" fill="#fdba74" />
+  <circle cx="95" cy="74" r="5" fill="#fdba74" />
+  <!-- eyes -->
+  <circle cx="40" cy="61" r="6.5" fill="#431407" />
+  <circle cx="80" cy="61" r="6.5" fill="#431407" />
+  <!-- nose -->
+  <ellipse cx="60" cy="83" rx="7" ry="5.5" fill="#431407" />
+  <!-- mouth -->
+  <path d="M49 93 Q60 102 71 93" stroke="#431407" stroke-width="4" stroke-linecap="round" fill="none" />
+</svg>

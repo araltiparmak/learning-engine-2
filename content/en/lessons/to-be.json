@@ -1,0 +1,150 @@
+{
+  "title": "am / is / are — İngilizcenin çekirdek fiili",
+  "level": "A1",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Türkçede \"Ben öğrenciyim\" derken **ortada fiil yoktur** — bütün işi sondaki minik *-im* eki görür. İngilizcede öyle bir ek yok; onun yerine bir fiil koymak zorundasın: **be**. İngilizcenin en çok çalışan, en çok şekil değiştiren fiilidir; üç ayrı yüzü vardır (*am · is · are*) ve hepsini tanıman gerekir — çünkü kuracağın cümlelerin yarısı bu fiilin omzunda duracak."
+    },
+    {
+      "type": "tip",
+      "title": "Üç kişilik bir kadro",
+      "items": [
+        "**I → am** — *am* özel korumadır: yalnızca *I* ile çalışır, başka özneye dönüp bakmaz bile.",
+        "**he / she / it → is** — tekil üçüncü kişi. Yani konuşulan kişi ya da şey.",
+        "**you / we / they → are** — geri kalan herkes; kalabalık tek bir çalışana emanet.",
+        "Kanca: **fiili özne seçer, cümlenin anlamı değil.** Hangisi geleceğinden emin değilsen soldaki kelimeye bak, sağdakine değil."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "1. Yedi özne, üç fiil"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aşağıdaki tablo İngilizcenin en çok kullanılan çekimidir. Türkçe karşılıklarına dikkat et: hepsinde fiilin yerini bir **ek** tutuyor, o yüzden Türkçeden çevirirken \"fiil nerede?\" diye sormak gerekiyor."
+    },
+    {
+      "type": "component",
+      "name": "TermList",
+      "id": "to-be-forms",
+      "props": { "source": "toBe", "group": "forms" }
+    },
+    {
+      "type": "highlight",
+      "text": "Türkçede ek, İngilizcede fiil: **öğrenciyim → I am a student.**",
+      "speak": "I am a student."
+    },
+    {
+      "type": "heading",
+      "text": "2. Olumsuz: not fiilin ARKASINA gelir"
+    },
+    {
+      "type": "paragraph",
+      "text": "Türkçede olumsuzluk cümlenin sonuna eklenir (*değilim*). İngilizcede **be fiilinin hemen arkasına** bir *not* koyarsın ve iş biter — başka hiçbir şeye dokunmazsın: *I am* → *I am not*, *she is* → *she is not (isn't)*. Bu fiil kendi olumsuzunu kendi taşır; yardımcı fiil çağırmaz."
+    },
+    {
+      "type": "component",
+      "name": "PatternList",
+      "id": "to-be-negatives",
+      "props": { "source": "toBe", "group": "negatives" }
+    },
+    {
+      "type": "heading",
+      "text": "3. Soru: fiil öne geçer"
+    },
+    {
+      "type": "paragraph",
+      "text": "Soru sormak için **be fiilini öznenin önüne al** — hepsi bu, başka bir yardımcı fiile (*do/does*) gerek yok. *be* soru sorarken kimseden yardım istemez. Cevap verirken de aynı fiili tekrar edersin: *Are you ready?* → *Yes, I am.*"
+    },
+    {
+      "type": "component",
+      "name": "PatternList",
+      "id": "to-be-questions",
+      "props": { "source": "toBe", "group": "questions" }
+    },
+    {
+      "type": "tip",
+      "title": "Kısa cevabın kuralı",
+      "text": "Olumlu kısa cevapta **kısaltma yoktur**: *Yes, I am* (Yes, I'm değil), *Yes, he is* (Yes, he's değil). Olumsuz kısa cevapta ise kısaltma serbesttir: *No, he isn't.* Kural garip görünüyor ama mantığı basit: *I'm* yarım kalmış bir kelimedir, arkasına bir şey ister — sonuna gelince tutunacak dal bulamaz."
+    },
+    {
+      "type": "heading",
+      "text": "Sık yapılan hatalar"
+    },
+    {
+      "type": "component",
+      "name": "MistakeList",
+      "id": "to-be-mistakes",
+      "props": {
+        "items": [
+          {
+            "wrong": "I student.",
+            "right": "I am a student.",
+            "why": "Türkçede \"Ben öğrenciyim\" cümlesinde fiil yoktur, ek yeter. İngilizcede be fiili zorunludur — ve meslek söylerken tekil ismin önünde a/an bulunur."
+          },
+          {
+            "wrong": "I have 30 years old.",
+            "right": "I am 30 years old.",
+            "why": "Fransızca ve İtalyanca gerçekten \"30 yılım var\" der, ama İngilizce demez: yaş senin malın değil, hâlindir. Yaş, boy, açlık, yorgunluk, hava — hepsi be fiiliyle söylenir."
+          },
+          {
+            "wrong": "Are you ready? — Yes, I'm.",
+            "right": "Are you ready? — Yes, I am.",
+            "why": "Kısaltmanın yaslanacak bir kelimeye ihtiyacı var; cümlenin sonunda arkasında kimse kalmaz ve tek başına düşer. Cümle be fiiliyle bitiyorsa fiil açık yazılır."
+          }
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "text": "Örnek cümleler"
+    },
+    {
+      "type": "component",
+      "name": "PatternList",
+      "id": "to-be-examples",
+      "props": { "source": "toBe", "group": "examples" }
+    },
+    {
+      "type": "heading",
+      "text": "Alıştırma"
+    },
+    {
+      "type": "reveal",
+      "intro": "Önce kendin kur, sonra cevabı aç.",
+      "items": [
+        { "q": "Ben mühendisim.", "a": "I am an engineer." },
+        { "q": "O (kadın) benim öğretmenim.", "a": "She is my teacher." },
+        { "q": "Biz hazırız.", "a": "We are ready." },
+        { "q": "Onlar evde değil.", "a": "They aren't at home." },
+        { "q": "Yorgun değilim.", "a": "I'm not tired." },
+        { "q": "Bu senin telefonun mu?", "a": "Is this your phone?" },
+        { "q": "Hazır mısın? — Evet, hazırım.", "a": "Are you ready? — Yes, I am." },
+        { "q": "O (erkek) işte mi? — Hayır, değil.", "a": "Is he at work? — No, he isn't." },
+        { "q": "Bugün hava sıcak.", "a": "It is hot today." },
+        { "q": "Nerelisin?", "a": "Where are you from?" },
+        { "q": "Kız kardeşim on yaşında.", "a": "My sister is ten years old." },
+        { "q": "Çocuklar okulda.", "a": "The children are at school." }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Sırada ne var?",
+      "note": "be fiili senin ne olduğunu anlatır. Sırada ne yaptığın var — ve etrafta ne olduğu.",
+      "links": [
+        { "to": "/dersler/present-simple", "label": "Present Simple: her gün ne yaparsın?", "primary": true },
+        { "to": "/dersler/there-is-there-are", "label": "there is / there are — var ve yok" }
+      ]
+    }
+  ],
+  "review": {
+    "title": "Kısa tekrar",
+    "items": [
+      "**I → am · he/she/it → is · you/we/they → are.** Fiili özne seçer.",
+      "**Olumsuzda not fiilin arkasına gelir**: *is not (isn't)*, *are not (aren't)*, *am not* (kısaltması yok).",
+      "**Soruda be öne geçer**: *Are you…? · Is she…?* — do/does gerekmez.",
+      "**Yaş, hava, açlık be ile söylenir**: *I am 30*, *It is cold*, *I am hungry*."
+    ]
+  }
+}

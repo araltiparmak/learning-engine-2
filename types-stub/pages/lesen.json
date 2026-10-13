@@ -1,0 +1,39 @@
+{
+ "intro": "Gramer öğrenmek başka, onu bir metnin içinde tanımak başka. Buradaki parçalar A1'den B1'e uzanıyor ve derslerde gördüğün yapıları gerçek bağlamda kullanıyor. Önce Türkçesine bakmadan oku, soruları çöz; takıldığın kelimeler metnin altındaki sözlükte.",
+ "texte": [
+  {
+   "id": "wohnungssuche",
+   "emoji": "🏠",
+   "title": "Die Wohnungssuche",
+   "titleTr": "Ev arayışı",
+   "thema": "Wohnen",
+   "level": "A2",
+   "intro": "Lena Leipzig'de oda arıyor. İlan okuyor, telefon ediyor, daireyi geziyor — Perfekt ve yan cümleler iş başında.",
+   "grammatik": [
+    {
+     "label": "Perfekt",
+     "to": "/dersler/haben-sein"
+    }
+   ],
+   "text": [
+    {
+     "de": "Lena studiert seit zwei Jahren in Leipzig. Bis jetzt hat sie bei einer Freundin gewohnt, aber die Wohnung ist zu klein für zwei Personen. Deshalb sucht sie seit drei Wochen ein eigenes Zimmer.",
+     "tr": "Lena iki yıldır Leipzig'de okuyor. Şimdiye kadar bir arkadaşında kaldı ama daire iki kişi için fazla küçük. Bu yüzden üç haftadır kendine ait bir oda arıyor."
+    }
+   ],
+   "glossar": [
+    {
+     "de": "die Anzeige",
+     "tr": "ilan"
+    }
+   ],
+   "questions": [
+    {
+     "q": "Lena wohnt jetzt allein in einer großen Wohnung.",
+     "correct": "Falsch",
+     "reason": "Metinde \"Bis jetzt hat sie bei einer Freundin gewohnt\" diyor — bir arkadaşında kalıyor ve daire iki kişi için fazla küçük."
+    }
+   ]
+  }
+ ]
+}

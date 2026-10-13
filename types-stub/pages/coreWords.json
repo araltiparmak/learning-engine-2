@@ -1,0 +1,20 @@
+{
+ "words": [
+  {
+   "de": "der, die, das",
+   "tr": "belirli tanımlık",
+   "en": "the"
+  }
+ ],
+ "pronouns": [
+  {
+   "nom": "ich",
+   "akk": "mich",
+   "dat": "mir",
+   "gen": "meiner",
+   "poss": "mein",
+   "tr": "ben",
+   "en": "I"
+  }
+ ]
+}

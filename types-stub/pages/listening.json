@@ -1,0 +1,49 @@
+{
+ "intro": "Önce soruları oku, sonra kaydı dinle; metni ancak cevapladıktan sonra aç.",
+ "tests": [
+  {
+   "id": "termin-beim-arzt",
+   "emoji": "🩺",
+   "title": "Termin beim Arzt",
+   "titleTr": "Doktordan telefonla randevu almak",
+   "thema": "Gesundheit",
+   "level": "A2",
+   "seconds": 56,
+   "structures": [
+    {
+     "label": "Uhrzeit",
+     "pattern": "um zehn Uhr · Viertel nach / vor",
+     "to": "/dersler/zeit-datum"
+    }
+   ],
+   "speakers": [
+    {
+     "name": "Frau Weber",
+     "voice": "Kore",
+     "role": "Arzthelferin"
+    }
+   ],
+   "transcript": [
+    {
+     "speaker": "Frau Weber",
+     "de": "Praxis Doktor Hoffmann, guten Morgen. Mein Name ist Weber. Was kann ich für Sie tun?",
+     "tr": "Doktor Hoffmann muayenehanesi, günaydın. Adım Weber. Sizin için ne yapabilirim?",
+     "en": "Dr. Hoffmann's practice, good morning. My name is Weber. What can I do for you?"
+    }
+   ],
+   "glossar": [
+    {
+     "de": "einen Termin vereinbaren",
+     "tr": "randevu almak / kararlaştırmak"
+    }
+   ],
+   "questions": [
+    {
+     "q": "Herr Demir ist zum ersten Mal Patient in dieser Praxis.",
+     "correct": "Falsch",
+     "reason": "\"Waren Sie schon einmal bei uns?\" sorusuna \"Ja, letztes Jahr im November\" diye cevap veriyor — yani daha önce de gelmiş."
+    }
+   ]
+  }
+ ]
+}

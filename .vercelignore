@@ -1,0 +1,20 @@
+# Vercel already excludes things like .git, node_modules, .venv, .vercel and .env*
+# automatically. But --archive=tgz mode does not always apply custom .gitignore rules
+# reliably (directory patterns in particular), so they are repeated here explicitly.
+
+# Local build output — Vercel runs its own build anyway
+dist
+dist-ssr
+
+# Scans of the source textbook (PDF) — must not go to Vercel for copyright reasons; only for
+# local lesson authoring
+resources
+
+# Editor/tool directories
+.idea
+.vscode
+
+logs
+*.log
+*.local
+.DS_Store

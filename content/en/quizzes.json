@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "to-be",
+    "lesson": "to-be",
+    "source": "toBe",
+    "title": "am / is / are — Çoktan Seçmeli",
+    "listTitle": "am / is / are — Çoktan Seçmeli",
+    "description": "be fiilinin doğru hâlini seç: olumlu, olumsuz, soru ve kısa cevap."
+  },
+  {
+    "slug": "to-be-build",
+    "lesson": "to-be",
+    "source": "toBe",
+    "engine": "satzbau",
+    "title": "am / is / are — Cümle Kurma Oyunu",
+    "listTitle": "am / is / are — Cümle Kurma Oyunu",
+    "description": "Türkçe cümleyi oku, parçalara sırayla tıklayarak be fiiliyle cümleyi kur."
+  }
+]

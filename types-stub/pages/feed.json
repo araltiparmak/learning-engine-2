@@ -1,0 +1,36 @@
+{
+ "intro": "Her konu kısa kartlardan oluşan bir akış: kanca, kural, sık yapılan hatalar, tek dokunuşluk sorular ve sonda bütün konuyu toplayan bir özet. Yanlış cevapladığın soru birkaç kart sonra yine karşına çıkar; konu bitince sorular karışık sırayla dönmeye devam eder. Bir kartı yer imiyle kaydedersen Notlar'da bulursun.",
+ "topics": [
+  {
+   "id": "artikel-endungen",
+   "level": "A1",
+   "lesson": "der-die-das",
+   "title": "der, die, das",
+   "description": "Artikeli ezberleme, kelimenin sonundan oku.",
+   "emoji": "🏷️",
+   "cards": [
+    {
+     "type": "hook",
+     "text": "Mädchen \"kız\" demek, ama artikeli **das**. Almanca kızları eşya mı sanıyor?",
+     "de": "das Mädchen"
+    }
+   ]
+  }
+ ],
+ "speaking": [
+  {
+   "id": "cafe-siparis",
+   "level": "A2",
+   "title": "Kafede sipariş: Ich hätte gern …",
+   "description": "Sipariş ver, var mı diye sor, hesabı iste, üstü kalsın de.",
+   "emoji": "☕",
+   "cards": [
+    {
+     "type": "hook",
+     "text": "Kafede **Ich will einen Kaffee** dersen kahveni alırsın, ama garson bir an kaşını kaldırır. **will** emir gibi duyulur; sipariş verirken Almanlar **Ich hätte gern** der.",
+     "de": "Ich hätte gern einen Kaffee, bitte."
+    }
+   ]
+  }
+ ]
+}
